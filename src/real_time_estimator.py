@@ -28,7 +28,7 @@ from adb_collector import poll_cells_adb, adb_available
 from feature_engineering import build_features
 from kalman_filter import HeightKalmanFilter
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "height_lgbm.txt")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "lightGBM.txt")
 CALIBRATION_SECONDS = 5  # nombre de lectures pour verrouiller le sol
 
 

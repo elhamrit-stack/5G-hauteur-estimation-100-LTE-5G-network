@@ -134,7 +134,7 @@ passive-cellular-altimeter/
 │   ├── kalman.py       # Filtre de Kalman 2 états [z, vz]
 │   └── edge_server.py  # API légère pour test en direct (optionnel)
 ├── models/
-│   ├── height_lgbm.txt # Modèle LightGBM entraîné (< 300 Ko)
+│   ├── lightGBM.txt # Modèle LightGBM pré-entraîné (< 300 Ko, fourni en externe)
 │   └── metadata.json   # RMSE de validation, features, date d'entraînement
 ├── tests/
 │   └── test_replay.py  # Relecture d'une montée enregistrée et comparaison vrai vs estimé

@@ -1,5 +1,11 @@
 """Entraînement du modèle LightGBM pour l'estimation d'altitude Z depuis le RSRP 4G/5G.
 
+NOTE : L'entraînement est normalement effectué dans un environnement externe.
+Ce script est conservé pour le ré-entraînement ou l'affinage (fine-tuning) sur
+de nouvelles données si nécessaire.
+
+Le modèle pré-entraîné attendu en production est : models/lightGBM.txt
+
 Deux modes :
 1. Données réelles : CSV dans data/raw/ (colonnes : timestamp, pci, rsrp, rsrq, ta, true_height)
 2. Bootstrap synthétique : génère un modèle préalable basé sur la physique 3GPP
@@ -19,7 +25,7 @@ from feature_engineering import build_features
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 MODEL_DIR = os.path.join(os.path.dirname(__file__), "..", "models")
-MODEL_PATH = os.path.join(MODEL_DIR, "height_lgbm.txt")
+MODEL_PATH = os.path.join(MODEL_DIR, "lightGBM.txt")
 META_PATH = os.path.join(MODEL_DIR, "metadata.pkl")
 
 TOP_K = 8
