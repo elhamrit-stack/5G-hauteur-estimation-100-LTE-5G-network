@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+*.egg-info
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Data and models (large files - optional, uncomment if you want to track them)
+# data/raw/*.csv
+# models/*.txt
+# models/*.pkl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
